@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+
 
 export default function Navbar() {
+
     return (
-      <nav className="bg-gray-900 text-white p-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <Link href="/" className="text-2xl font-semibold hover:text-gray-300">
-            LeetCode Tracker
+      <nav className="bg-gray-900 text-white">
+        <div className="mx-2 flex justify-between items-center">
+          <Link href="/" className="flex items-center text-2xl font-semibold hover:text-gray-300">
+          <Image src="/leetcodetracker.png" alt="Logo" width={90} height={90} />
+          <span className="text-xl font-bold">Leetcode Tracker</span>
           </Link>
-          <div className="space-x-4 hidden md:flex">
+          <div className="space-x-4 hidden md:flex mx-4">
             <Link href="/" className="hover:text-gray-300">
               Leaderboard
             </Link>
