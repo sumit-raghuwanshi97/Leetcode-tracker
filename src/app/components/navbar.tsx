@@ -19,6 +19,9 @@ export default function Navbar() {
             <Link href="/settings" className="hover:text-gray-300">
               Settings
             </Link>
+            <Link href="/presentation/login" className="hover:text-gray-300">
+              Login
+            </Link>
           </div>
           {/* Mobile Menu */}
           <div className="md:hidden">
